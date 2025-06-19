@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: oklch(0.6504 0.1701 39.99);
+  --font-inter: "Inter", sans-serif;
+  --color-light-gray: oklch(0.2308 0 0);
+  --color-extraLight-gray: oklch(0.273 0 0);
+  --color-black: oklch(0.1776 0 0);
+}
+
+@layer base {
+  :root {
+    @apply font-inter text-white bg-black;
+  }
+}
+
+@layer utilities {
+  .icon-sm {
+    @apply w-4 h-4;
+  }
+}
