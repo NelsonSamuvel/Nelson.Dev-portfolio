@@ -20,6 +20,10 @@
     background-color: var(--color-primary); /* orange-500 */
     color: white;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer utilities {
@@ -30,6 +34,7 @@
   .heading-3 {
     @apply text-3xl sm:text-4xl text-primary font-semibold mb-4;
   }
+
 
   .icon-sm {
     @apply w-5 h-5;
