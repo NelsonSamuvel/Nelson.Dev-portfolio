@@ -15,14 +15,40 @@
   :root {
     @apply font-inter text-white bg-black;
   }
+
+  ::selection {
+    background-color: var(--color-primary); /* orange-500 */
+    color: white;
+  }
 }
 
 @layer utilities {
+  .heading-2 {
+    @apply text-3xl sm:text-4xl text-primary font-semibold mb-4;
+  }
+
+  .heading-3 {
+    @apply text-3xl sm:text-4xl text-primary font-semibold mb-4;
+  }
+
   .icon-sm {
     @apply w-5 h-5;
   }
 
+  .custom-container {
+    @apply w-full max-w-screen-xl md:mx-auto;
+  }
 
+  .party-paper {
+    background-image: url("/partypaper.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent;
+  }
 }
 
 @layer components {

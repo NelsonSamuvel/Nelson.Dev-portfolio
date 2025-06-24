@@ -5,8 +5,9 @@ import { useEffect } from "react";
 const AOSWrapper = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     AOS.init({
-      duration: 800, // animation duration
-      once: true, // animation only once
+      duration: 1000, // animation duration
+      once: true,
+      offset: 200,
     });
   }, []);
   return children;

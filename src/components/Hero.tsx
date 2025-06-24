@@ -1,15 +1,15 @@
 import { Code, FileSignature } from "lucide-react";
-import React from "react";
 
 const Hero = () => {
   return (
-    <section className="min-h-[calc(100vh-72px)] flex gap-6  items-center md:items-start justify-center flex-col md:min-h-[calc(100vh-60px)] px-6 md:px-12">
+    <section className="custom-container min-h-[calc(100vh-72px)] flex gap-6  items-center md:items-start justify-center flex-col md:min-h-[calc(100vh-60px)] px-6 md:px-12">
       <div className="flex flex-col gap-4">
         <h2
           data-aos="fade-right"
-          className="font-semibold text-4xl md:text-5xl max-w-2xl leading-[42px] md:leading-[60px] text-center md:text-left"
+          data-aos-duration="800"
+          className="font-semibold text-3xl sm:text-4xl md:text-5xl max-w-2xl leading-[42px] md:leading-[60px] text-center md:text-left"
         >
-          Bringing interfaces to life with{" "}
+          Bringing interfaces to life with{"     "}
           <span className="whitespace-nowrap">
             <span className="text-primary">React</span> &{" "}
             <span className="text-primary">Next.js</span> web.
@@ -24,11 +24,11 @@ const Hero = () => {
         </p>
       </div>
       <div
-        className="flex gap-4 flex-wrap"
+        className="flex gap-4 flex-wrap justify-center"
         data-aos="fade-right"
         data-aos-duration="1200"
       >
-        <button className="btn  bg-primary hover:bg-primary/90">
+        <button className="btn sm:w-auto shadow-2xl shadow-primary  bg-primary hover:bg-primary/90">
           My Works
           <Code className="icon-sm" />
         </button>
@@ -36,7 +36,7 @@ const Hero = () => {
           href="/resume.pdf"
           download
           target="_blank"
-          className="btn bg-light-gray hover:bg-light-gray/90"
+          className="btn shadow-2xl shadow-light-gray bg-light-gray hover:bg-light-gray/90"
         >
           Resume
           <FileSignature className="icon-sm" />

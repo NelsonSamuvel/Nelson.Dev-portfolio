@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav>
         <div
           data-aos="fade-down"
-          className="flex items-center justify-between bg-light-gray px-6 py-3 mt-2  rounded-full"
+          className="flex items-center  justify-between  bg-light-gray px-6 py-3 mt-2  rounded-full"
         >
           <h1 className="text-xl font-medium">
             <a href="#">
@@ -26,17 +26,23 @@ const Navbar = () => {
 
           <ul className="hidden md:flex items-center gap-5 font-medium">
             {menuData.map((menuItem) => (
-              <li className="hover:text-primary transition-all duration-300">
+              <li
+                key={menuItem.id}
+                className="hover:text-primary transition-all duration-300"
+              >
                 <a href={`#${menuItem.link}`}>{menuItem.label}</a>
               </li>
             ))}
           </ul>
         </div>
         {isSearchOpen && (
-          <ul className="flex flex-col fixed z-50 w-full md:hidden px-6 py-2   gap-2.5 divide-y divide-light-gray bg-black">
+          <ul
+            className={`flex flex-col fixed  z-50 w-full md:hidden px-6 py-2 transition-opacity duration-300   gap-2.5 divide-y divide-light-gray bg-black`}
+          >
             {menuData.map((menuItem) => (
-              <li>
+              <li key={menuItem.id}>
                 <a
+                  onClick={() => setIsSearchOpen(false)}
                   className="block hover:text-primary transition-all duration-300  bg-light-gray px-4 py-2 rounded-md hover:bg-light-gray/80"
                   href={`#${menuItem.link}`}
                 >
