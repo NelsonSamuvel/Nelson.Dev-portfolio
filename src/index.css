@@ -3,7 +3,9 @@
 
 @theme {
   --color-primary: oklch(0.6504 0.1701 39.99);
+
   --font-inter: "Inter", sans-serif;
+
   --color-light-gray: oklch(0.2308 0 0);
   --color-extraLight-gray: oklch(0.273 0 0);
   --color-black: oklch(0.1776 0 0);
@@ -17,6 +19,14 @@
 
 @layer utilities {
   .icon-sm {
-    @apply w-4 h-4;
+    @apply w-5 h-5;
+  }
+
+
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-3 min-w-[140px] flex gap-2 justify-center items-center cursor-pointer font-medium rounded-md border-none outline-none;
   }
 }
