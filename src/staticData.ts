@@ -1,3 +1,6 @@
+import project1 from "./assets/project1.png"
+import project2 from "./assets/project2.png"
+
 export const menuData = [
     {
         label: "About Me",
@@ -85,5 +88,49 @@ export const skillsData = [
         imgLink: "/vite.svg",
     }
 ]
+
+export const projectsData = [
+    {
+        id: 1,
+        title: "The Cities Haven",
+        description: "A modern, responsive admin dashboard for managing hotel bookings, built with a focus on performance, usability, and clean UI design.",
+        tags: [
+            { name: "React", icon: "/react.svg" },
+            { name: "Styled Components", icon: "" },
+            { name: "Supabase", icon: "/supabase.svg" },
+        ],
+        demoLink: "https://the-city-haven.vercel.app",
+        githubLink: "https://github.com/NelsonSamuvel/the-city-haven",
+        image: project1
+    },
+    {
+        id: 2,
+        title: "Cineverze",
+        description: "A user-friendly movie listing platform that allows users to browse, search, and discover movies with intelligent recommendations based on trending titles and search behavior.",
+        tags: [
+            { name: "React", icon: "/react.svg" },
+            { name: "TailwindCSS", icon: "/tailwind.svg" },
+            { name: "Appwrite", icon: "" },
+        ],
+        demoLink: "https://cineverze.vercel.app",
+        githubLink: "https://github.com/NelsonSamuvel/CineVerse-React",
+        image: project2
+    },
+    {
+        id: 3,
+        title: "Portfolio Website",
+        description: "A personal portfolio website to showcase my skills and projects. Built with React and Tailwind CSS.",
+        tags: [
+            { name: "React", icon: "/react.svg" },
+            { name: "Vite", icon: "/vite.svg" },
+            { name: "Tailwind CSS", icon: "/tailwind.svg" },
+        ],
+        demoLink: "#",
+        githubLink: "https://github.com/NelsonSamuvel/Nelson.Dev-portfolio",
+        image: ""
+    },
+
+]
+
 
 

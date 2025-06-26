@@ -4,11 +4,9 @@ import { skillsData } from "../staticData";
 const Skills = () => {
   const loopedData = [...skillsData, ...skillsData];
   return (
-    <section id="skills" className="min-h-[100vh] -scroll-mt-8">
+    <section id="skills" className="scroll-mt-0 pb-8" data-aos="fade-in">
       <div className=" flex flex-col  gap-4 md:gap-8 justify-between items-center py-12">
-        <h2 className="heading-2" data-aos="fade-in">
-          Tech Stack
-        </h2>
+        <h2 className="heading-2">Tech Stack</h2>
 
         <Marquee pauseOnHover={true}>
           {loopedData.map((skill) => (
