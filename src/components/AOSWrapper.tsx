@@ -10,7 +10,7 @@ const AOSWrapper = ({ children }: { children: React.ReactNode }) => {
       offset: 200,
     });
   }, []);
-  return children;
+  return <div className="overflow-x-hidden">{children}</div>;
 };
 
 export default AOSWrapper;

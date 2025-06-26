@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-[50vh]  bg-light-gray party-paper -scroll-mt-8"
+      className="min-h-[100vh]  bg-light-gray party-paper -scroll-mt-8"
     >
       <div className="custom-container flex flex-col gap-4 justify-between items-center px-6 py-12">
         <h2 className="heading-2" data-aos="fade-in">
@@ -42,13 +42,18 @@ const About = () => {
           <span className="text-primary">Next.js</span>, and{" "}
           <span className="text-primary">Tailwind CSS</span> — crafting smooth
           user experiences with clean and scalable code.{" "}
-          <p className="hidden md:block">
-            Beyond just writing components, I care about performance,
-            accessibility, and making the web more delightful. Whether it's a
-            simple landing page or a complex application, I approach each
-            project with curiosity, clarity, and a focus on real-world impact.
-          </p>
         </p>
+        <p className="font-semibold text-lg border-b border-primary">
+          What I care about:
+        </p>
+        <ul className="space-y-1 text-center" data-aos="fade-right">
+          <li>⚛️ Building dynamic interfaces with React and Next.js</li>
+          <li>🎨 Styling with Tailwind CSS for clean, responsive UIs</li>
+          <li>🚀 Focus on performance optimization and fast load times</li>
+          <li>♿ Committed to accessibility and user-centered design</li>
+          <li>🧩 Writing modular, reusable, and maintainable code</li>
+          <li>🛠️ Continuously learning and improving development practices</li>
+        </ul>
       </div>
     </section>
   );
