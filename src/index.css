@@ -9,6 +9,8 @@
   --color-light-gray: oklch(0.2308 0 0);
   --color-extraLight-gray: oklch(0.273 0 0);
   --color-black: oklch(0.1776 0 0);
+
+  --color-gray: oklch(87.2% 0.01 258.338);
 }
 
 @layer base {

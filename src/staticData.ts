@@ -12,16 +12,23 @@ export const menuData = [
         link: "skills",
         id: 2
     },
-    {
-        label: "Experience",
-        link: "experience",
-        id: 3
 
-    },
     {
         label: "Projects",
         link: "projects",
+        id: 3
+    },
+    {
+        label: "Experience",
+        link: "experience",
         id: 4
+
+    },
+    {
+        label: "Contact Me",
+        link: "contact",
+        id: 4
+
     }
 ]
 
@@ -131,6 +138,34 @@ export const projectsData = [
     },
 
 ]
+
+export const experienceData = [
+    {
+        id: 1,
+        role: "Frontend Developer",
+        start: "Dec 2024",
+        end: "May 2025",
+        company: "ProcodebaseAI",
+        experience: [
+            "Worked on 'Xperto-AI', an AI-based tutor platform for students using Next js, Typescript and TailwindCSS.",
+            "Built the Mock Interview module featuring a real-time video panel and chat interface. Enabled users to speak responses via camera, which were transcribed to text and sent to the backend.",
+            "Implemented Resume Builder module where users provide a summary and headline, and the system generates a downloadable PDF resume.",
+            "Collaborated with backend developers to perform api operations.",
+        ]
+    },
+    {
+        id: 2,
+        role: "Web Developer Intern",
+        start: "Aug 2022",
+        end: "Dec 2022",
+        company: "Nutz Technovation",
+        experience: [
+            "Assisted in building landing pages with HTML, CSS, and JavaScript.",
+            "Worked with senior developers to debug and optimize code.",
+            "Participated in code reviews and team meetings."
+        ]
+    }
+];
 
 
 

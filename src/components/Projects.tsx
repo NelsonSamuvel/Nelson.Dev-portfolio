@@ -13,7 +13,9 @@ const Projects = () => {
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 ">
           {projectsData.map((project) => (
             <li
-              onClick={() => window.open(project.demoLink, "_blank")}
+              onClick={(e) => {
+                window.open(project.demoLink, "_blank");
+              }}
               data-aos="fade-up"
               key={project.id}
               className="flex-1 transform hover:scale-[101%] transition-transform duration-150 cursor-pointer"
@@ -26,7 +28,7 @@ const Projects = () => {
                 />
                 <div className="p-4 space-y-2">
                   <h3 className="font-medium">{project.title}</h3>
-                  <p className="text-gray-300">{project.description}</p>
+                  <p className="text-gray">{project.description}</p>
                   <div className="flex gap-1 mt-4 items-center">
                     <ul className="flex gap-2 flex-wrap ">
                       {project.tags.map((tag) => (
@@ -50,6 +52,7 @@ const Projects = () => {
                     <a
                       href={project.demoLink}
                       target="_blank"
+                      onClick={(e) => e.stopPropagation()}
                       className="flex items-center gap-1 bg-primary px-2 py-1 rounded-md"
                     >
                       <span className="text-sm">Live</span>
@@ -58,6 +61,7 @@ const Projects = () => {
                     <a
                       href={project.githubLink}
                       target="_blank"
+                      onClick={(e) => e.stopPropagation()}
                       className="flex items-center gap-1 bg-light-gray/60 px-2 py-1 rounded-md"
                     >
                       <span className="text-sm">Github</span>
