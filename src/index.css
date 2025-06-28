@@ -52,6 +52,10 @@
     background-size: contain;
   }
 
+  .contact-bg {
+    background-image: url("/contact.svg");
+  }
+
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent;
   }

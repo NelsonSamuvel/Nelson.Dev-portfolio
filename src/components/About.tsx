@@ -43,10 +43,18 @@ const About = () => {
           <span className="text-primary">Tailwind CSS</span> — crafting smooth
           user experiences with clean and scalable code.{" "}
         </p>
-        <p className="font-semibold text-lg border-b border-primary">
+
+        <p
+          data-aos="fade-left"
+          className="font-semibold text-lg border-b border-primary"
+        >
           What I care about:
         </p>
-        <ul className="space-y-1 text-center" data-aos="fade-right">
+        <ul
+          data-aos="fade-left"
+          dat-aos-offset="100"
+          className="space-y-1 text-center"
+        >
           <li>⚛️ Building dynamic interfaces with React and Next.js</li>
           <li>🎨 Styling with Tailwind CSS for clean, responsive UIs</li>
           <li>🚀 Focus on performance optimization and fast load times</li>

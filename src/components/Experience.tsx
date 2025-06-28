@@ -26,7 +26,7 @@ const Experience = () => {
                 className="absolute bottom-0 -left-[7.8px] w-4 h-4 rounded-full bg-primary"
               ></div>
 
-              <div data-aos="fade-right">
+              <div data-aos="fade-left">
                 <h3 className="text-lg font-medium">{experience.company}</h3>
                 <div className="flex gap-2 text-sm text-gray">
                   <p>{experience.role}</p>
@@ -39,7 +39,7 @@ const Experience = () => {
                 </div>
               </div>
               <ul
-                data-aos="fade-right"
+                data-aos="fade-left"
                 className="text-md mt-4 text-gray space-y-2"
               >
                 {experience.experience.map((content, idx) => (
