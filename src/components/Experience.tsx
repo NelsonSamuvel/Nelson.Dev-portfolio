@@ -4,13 +4,13 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-[100vh] scroll-mt-0 bg-black"
+      className="min-h-[100vh]  scroll-mt-0 bg-black"
       data-aos="fade-in"
     >
-      <div className="max-w-screen-lg md:mx-auto  flex flex-col  gap-4 md:gap-8 justify-between items-center px-6 py-12">
+      <div className="max-w-screen-lg md:mx-auto  flex flex-col  gap-4 md:gap-8 justify-between items-center px-6 py-12 pb-16">
         <h2 className="heading-2">Experience</h2>
 
-        <div className="flex flex-col gap-8 md:gap-12">
+        <div className="flex flex-col gap-12 mt-6">
           {experienceData.map((experience) => (
             <div
               key={experience.id}

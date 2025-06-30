@@ -42,6 +42,7 @@ const Hero = () => {
           <FileSignature className="icon-sm" />
         </a>
       </div>
+
     </section>
   );
 };

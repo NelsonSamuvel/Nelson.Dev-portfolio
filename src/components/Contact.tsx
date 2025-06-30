@@ -71,7 +71,7 @@ const Contact = () => {
       className="scroll-mt-0 bg-light-gray"
       data-aos="fade-in"
     >
-      <div className="max-w-screen-lg md:mx-auto   flex flex-col  gap-4 md:gap-8 justify-between items-center px-6 py-12">
+      <div className="max-w-screen-sm md:mx-auto   flex flex-col  gap-4 md:gap-8 justify-between items-center px-6 py-12">
         <div>
           <h2 data-aos="fade-in" className="heading-2">
             Let's have a chat
@@ -80,7 +80,7 @@ const Contact = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 w-full max-w-lg  bg-black px-6 py-8 rounded-md"
+          className="space-y-6 w-full bg-black px-6 py-8 rounded-md"
         >
           <div className="space-y-3">
             <label htmlFor="email" className="block">

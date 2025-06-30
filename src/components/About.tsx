@@ -30,6 +30,13 @@ const About = () => {
             </span>
             I'm <span className="font-medium">Nelson Samuvel 🧑‍💻✨🎨</span>
           </p>
+          <a
+            data-aos="fade-in"
+            href="#footer"
+            className="text-center block mt-4 bg-gradient-to-r w-fit py-2 px-4 mx-auto bg-primary rounded-full text-white"
+          >
+            Stay Connected👋
+          </a>
         </div>
         <p
           className="text-center max-w-xl"
