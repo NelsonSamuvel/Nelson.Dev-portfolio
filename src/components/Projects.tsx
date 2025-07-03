@@ -18,9 +18,9 @@ const Projects = () => {
               }}
               data-aos="fade-up"
               key={project.id}
-              className="flex-1 transform hover:scale-[101%] transition-transform duration-150 cursor-pointer"
+              className="flex-1  cursor-pointer"
             >
-              <div className="p-1.5 bg-extraLight-gray border border-dashed rounded border-gray-500">
+              <div className="p-1.5 bg-extraLight-gray border border-dashed rounded border-gray-500 transform hover:scale-[101%] transition-all duration-150">
                 <img
                   src={project.image}
                   alt={project.title}

@@ -42,7 +42,7 @@
   }
 
   .custom-container {
-    @apply w-full max-w-screen-xl md:mx-auto;
+    @apply w-full max-w-screen-lg md:mx-auto;
   }
 
   .party-paper {
