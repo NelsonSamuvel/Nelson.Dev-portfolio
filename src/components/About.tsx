@@ -11,9 +11,9 @@ const About = () => {
 
         <img
           data-aos="fade-in"
-          src="https://placehold.co/400x400/png"
+          src="/avatar1.jpg"
           alt=""
-          className="rounded-full w-[200px]"
+          className="rounded-full object-cover w-1/2 md:w-1/4"
         />
         <div>
           <h3 data-aos="fade-right" className="heading-3 text-gradient">
@@ -40,7 +40,7 @@ const About = () => {
         </div>
         <p
           className="text-center max-w-xl"
-          data-aos="fade-left"
+          data-aos="fade-in"
           data-aos-offset="100"
         >
           I enjoy building fast, intuitive, and visually engaging web
@@ -52,16 +52,12 @@ const About = () => {
         </p>
 
         <p
-          data-aos="fade-left"
+          data-aos="fade-in"
           className="font-semibold text-lg border-b border-primary"
         >
           What I care about:
         </p>
-        <ul
-          data-aos="fade-left"
-          dat-aos-offset="100"
-          className="space-y-1 text-center"
-        >
+        <ul data-aos="fade-in" className="space-y-1 text-center">
           <li>⚛️ Building dynamic interfaces with React and Next.js</li>
           <li>🎨 Styling with Tailwind CSS for clean, responsive UIs</li>
           <li>🚀 Focus on performance optimization and fast load times</li>
