@@ -1,5 +1,6 @@
 import project1 from "./assets/project1.png"
 import project2 from "./assets/project2.png"
+import project3 from "./assets/sushi.png"
 
 export const menuData = [
     {
@@ -125,17 +126,17 @@ export const projectsData = [
     },
     {
         id: 3,
-        title: "Portfolio Website",
-        description: "A personal portfolio website to showcase my skills and projects. Built with React and Tailwind CSS.",
+        title: "sushilicious",
+        description: "A visually appealing static website showcasing a variety of sushi dishes, built using HTML and CSS.The layout is fully responsive, featuring modern UI with vibrant images, smooth navigation, and elegant typography to create an authentic Japanese dining experience online.",
         tags: [
-            { name: "React", icon: "/react.svg" },
-            { name: "Vite", icon: "/vite.svg" },
-            { name: "Tailwind CSS", icon: "/tailwind.svg" },
+            { name: "Html", icon: "/html.svg" },
+            { name: "Css", icon: "/css.svg" },
         ],
-        demoLink: "#",
-        githubLink: "https://github.com/NelsonSamuvel/Nelson.Dev-portfolio",
-        image: ""
+        demoLink: "https://sushilicious.vercel.app/",
+        githubLink: "https://github.com/NelsonSamuvel/Sushi-website-html-css",
+        image: project3
     },
+
 
 ]
 

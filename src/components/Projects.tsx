@@ -13,7 +13,7 @@ const Projects = () => {
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 ">
           {projectsData.map((project) => (
             <li
-              onClick={(e) => {
+              onClick={() => {
                 window.open(project.demoLink, "_blank");
               }}
               data-aos="fade-up"
@@ -24,7 +24,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded w-full "
+                  className="rounded w-full h-72 object-cover"
                 />
                 <div className="p-4 space-y-2">
                   <h3 className="font-medium">{project.title}</h3>
