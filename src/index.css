@@ -45,6 +45,10 @@
     @apply w-full max-w-screen-xl md:mx-auto;
   }
 
+  .min-view-height {
+    @apply min-h-[calc(100svh-60px)] md:min-h-[calc(100svh-72px)];
+  }
+
   .party-paper {
     background-image: url("/partypaper.svg");
     background-position: center;
@@ -64,5 +68,9 @@
 @layer components {
   .btn {
     @apply px-4 py-3 min-w-[140px] flex gap-2 justify-center items-center cursor-pointer font-medium rounded-md border-none outline-none;
+  }
+
+  .btn-outline {
+    @apply px-4 py-3 min-w-[140px] flex gap-2 justify-center items-center cursor-pointer font-medium rounded-md;
   }
 }
