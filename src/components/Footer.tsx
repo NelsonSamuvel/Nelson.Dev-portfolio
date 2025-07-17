@@ -54,9 +54,10 @@ const Footer = () => {
 
         {/* Text Content */}
         <motion.div
-          initial={{ x: -30 }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, scale: 0.75 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
           className="text-center"
         >
           <p className="text-lg font-light leading-relaxed mb-4">
