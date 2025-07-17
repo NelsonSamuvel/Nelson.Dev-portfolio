@@ -1,4 +1,5 @@
 import { experienceData } from "../staticData";
+import { motion } from "motion/react";
 
 const Experience = () => {
   return (
@@ -9,7 +10,13 @@ const Experience = () => {
     >
       <div className="max-w-screen-lg md:mx-auto relative flex flex-col gap-8 md:gap-12 justify-between items-center px-6 py-16 md:py-20">
         {/* Enhanced Header */}
-        <div className="text-center space-y-4">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-center space-y-4"
+        >
           <h2 className="heading-2 text-white relative">
             Experience
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
@@ -17,7 +24,7 @@ const Experience = () => {
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             My professional journey and key achievements
           </p>
-        </div>
+        </motion.div>
 
         {/* Enhanced Timeline */}
         <div className="relative w-full max-w-4xl ">

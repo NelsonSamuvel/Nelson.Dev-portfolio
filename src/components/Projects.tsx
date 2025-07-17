@@ -1,9 +1,10 @@
 import { ExternalLink, Github } from "lucide-react";
 import { projectsData } from "../staticData";
+import { motion } from "motion/react";
 
 const Projects = () => {
   return (
-    <section
+    <motion.section
       id="projects"
       className="min-h-[100vh] scroll-mt-0 bg-light-gray relative overflow-hidden"
       data-aos="fade-in"
@@ -16,20 +17,30 @@ const Projects = () => {
 
       <div className="custom-container relative flex flex-col gap-8 md:gap-12 justify-between items-center px-6 py-16 md:py-20">
         {/* Enhanced Header */}
-        <div className="text-center space-y-4">
-          <h2 className="heading-2 relative">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-center space-y-4"
+        >
+          <motion.h2 className="heading-2 relative">
             Projects
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
-          </h2>
+          </motion.h2>
           <p className="text-gray max-w-2xl mx-auto text-lg">
             Discover my latest work and creative solutions
           </p>
-        </div>
+        </motion.div>
 
         {/* Modern Card Grid */}
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-7xl">
           {projectsData.map((project, index) => (
-            <li
+            <motion.li
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
               onClick={() => {
                 window.open(project.demoLink, "_blank");
               }}
@@ -132,11 +143,11 @@ const Projects = () => {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl -translate-y-16 translate-x-16 group-hover:bg-primary/10 transition-colors duration-500"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl translate-y-12 -translate-x-12 group-hover:bg-primary/10 transition-colors duration-500"></div>
               </div>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

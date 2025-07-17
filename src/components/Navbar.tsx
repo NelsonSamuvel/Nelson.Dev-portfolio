@@ -1,13 +1,19 @@
 import { Search } from "lucide-react";
 import { useState } from "react";
 import { menuData } from "../staticData";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
     <header>
-      <nav className="max-md:px-4">
+      <motion.nav
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="max-md:px-4"
+      >
         <div
           data-aos="fade-down"
           className="custom-container flex items-center justify-between bg-light-gray px-6 py-3 mt-2 rounded-full shadow-lg backdrop-blur-sm bg-opacity-90  hover:shadow-xl transition-all duration-500"
@@ -47,7 +53,11 @@ const Navbar = () => {
           </ul>
         </div>
         {isSearchOpen && (
-          <ul
+          <motion.ul
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ y: 0 }}
+            transition={{ duration: 0.2 }}
             className={`flex flex-col fixed z-50 left-4 right-4 md:hidden py-2 transition-all duration-300 gap-2.5 divide-y divide-light-gray bg-black/95 backdrop-blur-md shadow-2xl`}
           >
             {menuData.map((menuItem) => (
@@ -64,9 +74,9 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-          </ul>
+          </motion.ul>
         )}
-      </nav>
+      </motion.nav>
     </header>
   );
 };

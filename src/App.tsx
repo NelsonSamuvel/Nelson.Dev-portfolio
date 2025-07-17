@@ -1,5 +1,4 @@
 import About from "./components/About";
-import AOSWrapper from "./components/AOSWrapper";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
@@ -10,7 +9,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <AOSWrapper>
+    <>
       <Navbar />
       <Hero />
       <About />
@@ -19,7 +18,7 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-    </AOSWrapper>
+    </>
   );
 }
 
