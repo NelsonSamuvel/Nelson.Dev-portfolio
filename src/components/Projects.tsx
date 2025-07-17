@@ -24,10 +24,10 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center space-y-4"
         >
-          <motion.h2 className="heading-2 relative">
-            Projects
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
-          </motion.h2>
+          <div className="space-y-2">
+            <h2 className="heading-2 relative">Projects</h2>
+            <div className="w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full"></div>
+          </div>
           <p className="text-gray max-w-2xl mx-auto text-lg">
             Discover my latest work and creative solutions
           </p>

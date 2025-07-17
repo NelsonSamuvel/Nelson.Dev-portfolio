@@ -8,7 +8,7 @@ const Experience = () => {
       className="min-h-[100vh] scroll-mt-0 bg-black relative overflow-hidden"
       data-aos="fade-in"
     >
-      <div className="max-w-screen-lg md:mx-auto relative flex flex-col gap-8 md:gap-12 justify-between items-center px-6 py-16 md:py-20">
+      <div className=" max-w-screen-lg md:mx-auto relative flex flex-col gap-8 md:gap-12 justify-between items-center px-6 py-16 md:py-20">
         {/* Enhanced Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -17,10 +17,10 @@ const Experience = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center space-y-4"
         >
-          <h2 className="heading-2 text-white relative">
-            Experience
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
-          </h2>
+          <div className="space-y-2">
+            <h2 className="heading-2 text-white relative">Experience</h2>
+            <div className="w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full"></div>
+          </div>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             My professional journey and key achievements
           </p>
@@ -50,7 +50,13 @@ const Experience = () => {
                 </div>
 
                 {/* Experience Card */}
-                <div className="md:ml-16 relative">
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="md:ml-16 relative"
+                >
                   <div className="bg-primary/10 backdrop-blur-sm border  rounded-2xl p-6 md:p-8 border-primary/30 group-hover:shadow-xl group-hover:shadow-primary/5 transition-all duration-500 hover:-translate-y-1">
                     {/* Card Header */}
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
@@ -95,7 +101,7 @@ const Experience = () => {
                       </ul>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>

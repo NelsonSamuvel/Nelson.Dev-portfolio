@@ -69,7 +69,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="scroll-mt-0 bg-light-gray"
+      className="scroll-mt-0 bg-light-gray overflow-hidden"
       data-aos="fade-in"
     >
       <div className="max-w-screen-sm md:mx-auto flex flex-col gap-8 md:gap-12 justify-between items-center px-6 py-16 md:py-20">
@@ -83,15 +83,19 @@ const Contact = () => {
         >
           <h2 data-aos="fade-in" className="heading-2 relative">
             Let's have a chat
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
           </h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full"></div>
           <p className="text-gray max-w-md mx-auto text-lg leading-relaxed">
             Have a project in mind? Let's discuss how we can work together.
           </p>
         </motion.div>
 
         {/* Enhanced Form */}
-        <form
+        <motion.form
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
           onSubmit={handleSubmit}
           className="space-y-8 w-full bg-black/95 backdrop-blur-sm px-8 py-10 rounded-3xl shadow-2xl shadow-black/20 border border-stone-800/50 relative overflow-hidden"
           data-aos="fade-up"
@@ -240,7 +244,7 @@ const Contact = () => {
               I'll get back to you within 24 hours ⚡
             </p>
           </div>
-        </form>
+        </motion.form>
       </div>
     </section>
   );

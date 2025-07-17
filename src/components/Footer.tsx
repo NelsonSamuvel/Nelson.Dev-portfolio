@@ -1,9 +1,17 @@
+import { motion } from "motion/react";
+
 const Footer = () => {
   return (
     <footer id="footer" className=" py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Social Links Section */}
-        <div className="flex justify-center mb-8">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.75 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex justify-center mb-8"
+        >
           <div className="flex gap-6 items-center bg-white/10 backdrop-blur-sm px-8 py-4 rounded-2xl border border-white/20 shadow-lg">
             <a
               href="https://www.linkedin.com/in/nelson-samuvel"
@@ -39,20 +47,25 @@ const Footer = () => {
               />
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Divider */}
         <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto mb-8"></div>
 
         {/* Text Content */}
-        <div className="text-center">
+        <motion.div
+          initial={{ x: -30 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center"
+        >
           <p className="text-lg font-light leading-relaxed mb-4">
             Still learning, still building, still curious. ❤️
           </p>
           <p className="text-base text-gray-300 font-medium">
             Thanks for stopping by — Nelson 🙌
           </p>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

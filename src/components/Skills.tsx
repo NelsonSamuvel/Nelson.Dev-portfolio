@@ -12,9 +12,10 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
-          className="heading-2"
+          className="text-center space-y-2 mb-4"
         >
-          Tech Stack
+          <h2 className="heading-2">Tech Stack</h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full"></div>
         </motion.h2>
 
         <Marquee pauseOnHover={true}>
