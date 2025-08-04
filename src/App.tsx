@@ -1,3 +1,4 @@
+import { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -8,9 +9,11 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
   return (
-    <>
-      <Navbar />
+    <div className={`h-screen ${isSearchOpen ? "overflow-hidden" : ""} `}>
+      <Navbar isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen} />
       <Hero />
       <About />
       <Skills />
@@ -18,7 +21,7 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

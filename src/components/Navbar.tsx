@@ -1,11 +1,8 @@
 import { Search } from "lucide-react";
-import { useState } from "react";
 import { menuData } from "../staticData";
 import { motion } from "motion/react";
 
-const Navbar = () => {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-
+const Navbar = ({ isSearchOpen, setIsSearchOpen }) => {
   return (
     <header>
       <motion.nav
